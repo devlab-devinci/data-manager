@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use App\Entity\Box;
 use App\Form\BoxType;
@@ -16,17 +16,17 @@ use Symfony\Component\Routing\Annotation\Route;
 class BoxController extends AbstractController
 {
     /**
-     * @Route("/", name="box_index", methods={"GET"})
+     * @Route("/index", name="admin_box_index", methods={"GET"})
      */
     public function index(BoxRepository $boxRepository): Response
     {
-        return $this->render('box/index.html.twig', [
+        return $this->render('admin/box/index.html.twig', [
             'boxes' => $boxRepository->findAll(),
         ]);
     }
 
     /**
-     * @Route("/new", name="box_new", methods={"GET","POST"})
+     * @Route("/new", name="admin_box_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -42,24 +42,24 @@ class BoxController extends AbstractController
             return $this->redirectToRoute('box_index');
         }
 
-        return $this->render('box/new.html.twig', [
+        return $this->render('admin/box/new.html.twig', [
             'box' => $box,
             'form' => $form->createView(),
         ]);
     }
 
     /**
-     * @Route("/{id}", name="box_show", methods={"GET"})
+     * @Route("/{id}", name="admin_box_show", methods={"GET"})
      */
     public function show(Box $box): Response
     {
-        return $this->render('box/show.html.twig', [
+        return $this->render('admin/box/show.html.twig', [
             'box' => $box,
         ]);
     }
 
     /**
-     * @Route("/{id}/edit", name="box_edit", methods={"GET","POST"})
+     * @Route("/{id}/edit", name="admin_box_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Box $box): Response
     {
@@ -81,7 +81,7 @@ class BoxController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="box_delete", methods={"DELETE"})
+     * @Route("/{id}", name="admin_box_delete", methods={"DELETE"})
      */
     public function delete(Request $request, Box $box): Response
     {
