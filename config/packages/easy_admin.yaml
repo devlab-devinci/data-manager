@@ -3,7 +3,6 @@ easy_admin:
     user:
         name_property_path: 'username'
         display_avatar: false
-
     list:
         title: 'Liste des %%entity_label%%'
     design:
@@ -29,6 +28,7 @@ easy_admin:
         brand_color: '#0cc5b9 !important'
         menu:
             - { label: 'Menu' }
+            - {label: 'Dashboard', icon: 'dashboard', route: 'admin_dashboard', default: true}
             - { entity: 'User', icon: 'user' }
             - { entity: 'Box', icon: 'square' }
     entities:
