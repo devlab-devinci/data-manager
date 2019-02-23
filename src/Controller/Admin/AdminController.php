@@ -18,8 +18,8 @@ class AdminController extends BaseAdminController
         $boxRepository = $em->getRepository(Box::class);
         $userRepository = $em->getRepository(User::class);
         return $this->render('admin/dashboard.html.twig', [
-            'boxCount' => $boxRepository->findAll(),
-            'userCount' => $userRepository->findAll()
+            'boxCount' => count($boxRepository->findAll()),
+            'userCount' => count($userRepository->findAll())
         ]);
     }
 }
