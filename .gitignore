@@ -17,3 +17,8 @@
 ###> symfony/web-server-bundle ###
 /.web-server-pid
 ###< symfony/web-server-bundle ###
+
+###> PHPStorm ###
+/.idea
+/.DS_Store
+###< PHPStorm ###
