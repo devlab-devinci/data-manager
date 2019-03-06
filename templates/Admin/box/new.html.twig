@@ -1,11 +1,15 @@
-{% extends 'base.html.twig' %}
+{% extends '@EasyAdmin/default/layout.html.twig' %}
+{% set _content_title = 'New Box' %}
+{% block page_title -%}
+    {{ _content_title }}
+{%- endblock %}
 
-{% block title %}New Box{% endblock %}
-
-{% block body %}
+{% block main %}
     <h1>Create new Box</h1>
 
-    {{ include('box/_form.html.twig') }}
+    {{ include('Admin/box/_form.html.twig') }}
 
-    <a href="{{ path('box_index') }}">back to list</a>
+    {{ form_row(form.uploadCsv) }}
+
+    <a href="{{ path('admin_box_index') }}">back to list</a>
 {% endblock %}

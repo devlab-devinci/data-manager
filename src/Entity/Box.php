@@ -22,9 +22,14 @@ class Box
     private $name;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="float" ,precision=10, scale=2)
      */
     private $price;
+
+    /**
+     *
+     */
+    private $uploadCsv;
 
     public function getId(): ?int
     {
@@ -43,15 +48,36 @@ class Box
         return $this;
     }
 
-    public function getPrice(): ?int
+    /**
+     * @return mixed
+     */
+    public function getPrice()
     {
         return $this->price;
     }
 
-    public function setPrice(int $price): self
+    /**
+     * @param mixed $price
+     */
+    public function setPrice($price): void
     {
         $this->price = $price;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getUploadCsv()
+    {
+        return $this->uploadCsv;
+    }
+
+    /**
+     * @param mixed
+     */
+    public function setUploadCsv($uploadCsv)
+    {
+        $this->uploadCsv = $uploadCsv;
         return $this;
     }
 }
