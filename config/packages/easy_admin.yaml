@@ -2,10 +2,14 @@ easy_admin:
     site_name: '<img src="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/v1/1391026/head_b7uqte.png"/>'
     user:
         name_property_path: 'username'
-        display_avatar: false
+        display_avatar: true
     list:
         title: 'Liste des %%entity_label%%'
     design:
+        templates:
+            paginator: 'admin/my_paginator.html.twig'
+            layout: 'admin/layouts/custom_layout.html.twig'
+            label_null: 'admin/null_value.html.twig'
         assets:
             # all kinds of assets are supported and linked accordingly
             css:
@@ -28,9 +32,9 @@ easy_admin:
         brand_color: '#0cc5b9 !important'
         menu:
             - { label: 'Menu' }
-            - {label: 'Dashboard', icon: 'dashboard', route: 'admin_dashboard', default: true}
+            - { label: 'Dashboard', icon: 'dashboard', route: 'admin_dashboard', default: true}
             - { entity: 'User', icon: 'user' }
-            - { entity: 'Box', icon: 'square' }
+            - { label: 'Box', icon: 'square', route: 'admin_box_index' }
     entities:
         # List the entity class name you want to manage
         User:

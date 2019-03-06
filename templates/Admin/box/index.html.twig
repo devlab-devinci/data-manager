@@ -3,11 +3,10 @@
 {% block page_title -%}
     {{ _content_title }}
 {%- endblock %}
-{% block content_header %}
-    <h1 class="title">{{ _content_title }}</h1>
-{% endblock %}
 {% block main %}
     <h1>Box index</h1>
+
+    <a href="{{ path('admin_box_new') }}" class="btn btn-primary">Create new !</a>
 
     <table class="table">
         <thead>
@@ -25,8 +24,8 @@
                 <td>{{ box.name }}</td>
                 <td>{{ box.price }}</td>
                 <td>
-                    <a href="{{ path('admin_box_show', {'id': box.id}) }}">show</a>
-                    <a href="{{ path('admin_box_edit', {'id': box.id}) }}">edit</a>
+                    <a href="{{ path('admin_box_show', {'id': box.id}) }}" class="btn-primary">show</a>
+                    <a href="{{ path('admin_box_edit', {'id': box.id}) }}" class="btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -36,5 +35,4 @@
         {% endfor %}
         </tbody>
     </table>
-    <a href="{{ path('admin_box_new') }}">Create new</a>
 {% endblock %}

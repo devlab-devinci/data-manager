@@ -15,12 +15,10 @@
 	    <h5 class="card-title">Connectez-vous pour accéder à votre interface d'administration !</h5>
 	    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
 	        <a href="{{ path('app_logout') }}" class="header-wrapicon1 dis-block btn btn-primary">Déconnexion</a>
-
 	    {% else %}
 	        <a href="{{ path('app_login') }}" class="header-wrapicon1 dis-block btn btn-primary">Connexion</a>
 	    {% endif %}
 	  </div>
 	</div>
-
 </div>
 {% endblock %}

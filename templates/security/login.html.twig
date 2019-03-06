@@ -1,4 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends '@EasyAdmin/page/login.html.twig' %}
+
+{% set _content_title = 'Connexion' %}
+{% block page_title -%}
+    {{ _content_title }}
+{%- endblock %}
 
 {% block title %}Log in!{% endblock %}
 
@@ -13,7 +18,6 @@
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
-
     <div class="example-wrapper">
         <div class="card">
           <h5 class="card-header">Connexion</h5>
@@ -43,7 +47,6 @@
             </button>
           </div>
         </div>
-
     </div>
 </form>
 {% endblock %}
