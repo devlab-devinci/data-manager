@@ -1,0 +1,15 @@
+last_check;period_start;period_end;provider;$key;name;price;commitment;step;price_after_step;speed_up;speed_up_unity;speed_down;speed_down_unity;remb_max_resiliation;info;web;#provider;#commentaire
+20/08/2018;;;1;BBF;Bbox Fit;12,99;12;12; 22,99  Û ;200;Mb/s;500;Mb/s; 100,00  Û ;;https://www.bouyguestelecom.fr/offres-internet/bbox-fit;1;D_bit ˆ confirmer
+20/08/2018;;;1;BBM;Bbox Must;17,99;12;12; 32,99  Û ;200;Mb/s;500;Mb/s; 100,00  Û ;;https://www.bouyguestelecom.fr/offres-internet/bbox-must;1;
+20/08/2018;;;1;BBU;Bbox Ultym;22,99;12;12; 37,99  Û ;250;Mb/s;1;Gb/s; 100,00  Û ;;https://www.bouyguestelecom.fr/offres-internet/bbox-ultym;1;
+20/08/2018;;;2;SFRS;Starter;14;12;12; 39,00  Û ;50;Mb/s;200;Mb/s;;10Go Cloud;https://www.sfr.fr/box-mobile/#sfrintid=HS_MAIN_Box+Mobile;2;
+20/08/2018;;;2;SFRP;Power;29;12;12; 44,00  Û ;100;Mb/s;400;Mb/s;;100Go Cloud;https://www.sfr.fr/box-mobile/#sfrintid=HS_MAIN_Box+Mobile;2;
+20/08/2018;;;2;SFRPM;Premium;37;12;12; 54,00  Û ;200;Mb/s;1;Gb/s;;1000Go Cloud;https://www.sfr.fr/offre-internet/box/#sfrintid=HS_MAIN_Offres-box;2;
+20/08/2018;;28/08/2018;3;FRC;Crystal;9,99;12;12; 24,99  Û ;1;Mb/s;15;Mb/s; 100,00  Û ;TV en option pour 4,99Û /mois;http://www.free.fr/offre/freebox-crystal.html;3;
+20/08/2018;;28/08/2018;3;FRM;Mini 4k;14,99;12;12; 34,99  Û ;200;Mb/s;1;Gb/s; 100,00  Û ;;http://www.free.fr/offre/freebox-mini.html;3;
+20/08/2018;;28/08/2018;3;FRR;R_volution;19,99;12;12; 44,99  Û ;200;Mb/s;1;Gb/s; 100,00  Û ;;http://www.free.fr/offre/freebox-revolution.html;3;
+20/08/2018;;;4;OPLAY;Play;25,99;12;12; 47,99  Û ;100;Mb/s;200;Mb/s;;42,99 après palier si ADSL;https://boutique.orange.fr/internet/offres-fibre;4;
+20/08/2018;;;4;OJET;Jet;33,99;12;12; 55,99  Û ;200;Mb/s;500;Mb/s;;50,99 après palier si ADSL;https://boutique.orange.fr/internet/offres-fibre;4;
+20/08/2018;;;4;OZEN;Zen;19,99;12;12; 41,99  Û ;100;Mb/s;100;Mb/s;;36,99 après palier si ADSL;https://boutique.orange.fr/internet/offres-fibre;4;
+20/08/2018;;30/07/2018;5;REDB;RED Box;20;;;;50;Mb/s;200;Mb/s; 100,00  Û ;;https://static.s-sfr.fr/media/fis_newgammethd-dsl.pdf;5;
+;;;;;BLABLA;333;;;;;;;;;;;;

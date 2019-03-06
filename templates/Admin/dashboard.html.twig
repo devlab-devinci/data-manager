@@ -12,20 +12,19 @@
             <div class="panel text-xs-center">
                 <div class="panel-body">
                     <p class="p-y-1"><i class="ion-ios-keypad font-size-46 line-height-1 text-primary"></i></p>
-                    <p><strong>Box</strong> <br/> <span class="m-b-4 text-primary">{{ boxCount|number_format(0, '.', ' ') }} box existant(s)</span></p>
+                    <p><strong>User</strong> <br/> <span class="m-b-4 text-primary">{{ userCount|number_format(0, '.', ' ') }} user existant(s)</span></p>
 
-                    <a href="{{ path('easyadmin', {entity: 'Box', action: 'list'}) }}" class="btn btn-primary">GO !</a>
+                    <a href="{{ path('easyadmin', {entity: 'User', action: 'list'}) }}" class="btn btn-primary">GO !</a>
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
             <div class="panel text-xs-center">
                 <div class="panel-body">
                     <p class="p-y-1"><i class="ion-ios-keypad font-size-46 line-height-1 text-primary"></i></p>
-                    <p><strong>User</strong> <br/> <span class="m-b-4 text-primary">{{ userCount|number_format(0, '.', ' ') }} user existant(s)</span></p>
+                    <p><strong>Box</strong> <br/> <span class="m-b-4 text-primary">{{ boxCount|number_format(0, '.', ' ') }} box existant(s)</span></p>
 
-                    <a href="{{ path('easyadmin', {entity: 'User', action: 'list'}) }}" class="btn btn-primary">GO !</a>
+                    <a href="{{ path('easyadmin', {entity: 'Box', action: 'list'}) }}" class="btn btn-primary">GO !</a>
                 </div>
             </div>
         </div>
