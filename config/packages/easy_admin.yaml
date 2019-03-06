@@ -47,3 +47,4 @@ easy_admin:
             list:
                 sort: ['id', 'ASC']
                 fields: ['id', 'name', 'price']
+    

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello IndexController!{% endblock %}
+{% block title %}Data Manager{% endblock %}
 
 {% block body %}
 <style>
@@ -9,15 +9,16 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    <p>Bienvenue sur la HOMEPAGE USER !!!</p>
-    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
-        <a href="{{ path('app_logout') }}" class="header-wrapicon1 dis-block">Logout</a>
-
-    {% else %}
-        <a href="{{ path('app_login') }}" class="header-wrapicon1 dis-block">Login</a>
-    {% endif %}
-
+	<div class="card">
+	  <h5 class="card-header">Bienvenue sur le projet Data Manager</h5>
+	  <div class="card-body">
+	    <h5 class="card-title">Connectez-vous pour accéder à votre interface d'administration !</h5>
+	    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+	        <a href="{{ path('app_logout') }}" class="header-wrapicon1 dis-block btn btn-primary">Déconnexion</a>
+	    {% else %}
+	        <a href="{{ path('app_login') }}" class="header-wrapicon1 dis-block btn btn-primary">Connexion</a>
+	    {% endif %}
+	  </div>
+	</div>
 </div>
 {% endblock %}

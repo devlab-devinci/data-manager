@@ -3,13 +3,21 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    <h1>Register</h1>
+	<div class="example-wrapper">
+		<div class="card">
+		  <h5 class="card-header">Création du compte</h5>
+		  <div class="card-body">
+		    {{ form_start(registrationForm) }}
+		    {{ form_row(registrationForm.username) }}
+		    {{ form_row(registrationForm.email) }}
+		    {{ form_row(registrationForm.plainPassword) }}
 
-    {{ form_start(registrationForm) }}
-    {{ form_row(registrationForm.username) }}
-    {{ form_row(registrationForm.email) }}
-    {{ form_row(registrationForm.plainPassword) }}
+		    <button class="btn btn-primary">Valider</button>
+		    {{ form_end(registrationForm) }}
+		  </div>
+		</div>
 
-    <button class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+	</div>
+
+    
 {% endblock %}
